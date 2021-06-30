@@ -1,0 +1,3 @@
+jQuery(document).ready(function($){
+    // These scripts will only be called on front end pages
+}); 
