@@ -1,6 +1,8 @@
+#!/usr/bin/env bash
+
 if [ "$#" -lt 1 ]; then
         echo "don't forget to provide the year to use as the directory (e.g. 2019-2020)"
-        exit 1
+	exit
 fi
 
 repo=annualreport-archive
