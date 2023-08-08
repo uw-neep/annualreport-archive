@@ -12,13 +12,13 @@ wget --mirror            \
      --html-extension    \
      --wait=2            \
      -o log              \
-     https://annualreport.ep.wisc.edu/
+     https://annualreport.neep.wisc.edu/
 
-cd annualreport.ep.wisc.edu
+cd annualreport.neep.wisc.edu
 sed -i -e 's/window.cookieconsent.initialize()//g' $(find . -name "*.html")
 cd ..
-mv annualreport.ep.wisc.edu $repo/$1
+mv annualreport.neep.wisc.edu $repo/$1
 cd $repo
 git add $1
 git commit -m "Adding archive for $1"
-echo "git push uw-ep main"
+echo "git push uw-neep main"
